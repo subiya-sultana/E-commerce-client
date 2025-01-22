@@ -1,6 +1,4 @@
-Apologies for the misunderstanding. Here is the corrected version in one single block:
 
-```markdown
 # eCommerce Client
 
 A simple eCommerce client-side application built with React and Tailwind CSS. Features include product browsing, search, shopping cart, and responsive design.
