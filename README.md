@@ -1,23 +1,32 @@
-eCommerce Client
+Apologies for the misunderstanding. Here is the corrected version in one single block:
+
+```markdown
+# eCommerce Client
+
 A simple eCommerce client-side application built with React and Tailwind CSS. Features include product browsing, search, shopping cart, and responsive design.
 
-Installation
-Clone the repository:
+## Installation
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/ecommerce-client.git
-cd ecommerce-client
-Install dependencies:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/ecommerce-client.git
+   cd ecommerce-client
+   ```
 
-bash
-Copy
-Edit
-npm install
-Start the development server:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-bash
-Copy
-Edit
-npm start
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+
+## Features
+
+- Browse products
+- Search for products
+- Add to shopping cart
+- Responsive design
+
