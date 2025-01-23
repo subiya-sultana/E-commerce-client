@@ -1,5 +1,12 @@
+import Header from "@/components/Header";
+import styled from "styled-components";
+
+
 export default function HomePage(){
   return(
-    <div>Test</div>
+    <div>
+      <Header />
+    </div>
+    
   )
 }
