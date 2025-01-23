@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
@@ -13,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
   html, body {
     max-width: 100vw;
     overflow-x: hidden;
-    background-color: pink;
+    background-color: var(--bg-green-300);
     font-family: "Lexend Giga", serif;
   }
 
@@ -28,6 +29,10 @@ const GlobalStyles = createGlobalStyle`
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <link rel="icon" href="/favicon.PNG" />
+        <title>EcoCart - HomePage</title>
+      </Head>
       <GlobalStyles />
       <Component {...pageProps} />
     </>
