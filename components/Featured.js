@@ -4,9 +4,6 @@ import styled from "styled-components";
 import Button from "./Button";
 import ButtonLink from "./ButtonLink";
 import CartIcon from "./icons/CartIcon";
-// import Button from "@/components/Button";
-// import ButtonLink from "@/components/ButtonLink";
-// import CartIcon from "@/components/icons/CartIcon";
 // import {useContext} from "react";
 // import {CartContext} from "@/components/CartContext";
 
@@ -19,9 +16,9 @@ const Bg = styled.div`
 const Title = styled.h1`
   margin:0;
   font-weight:normal;
-  font-size:1.5rem;
+  font-size:1rem;
   @media screen and (min-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 `;
 
