@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Button from "./Button";
 import CartIcon from "./icons/CartIcon";
 import Link from "next/link";
+import { useContext } from "react";
+import { CartContext } from "./CardContext";
 
 const ProductWrapper = styled.div`
   display: flex;
@@ -46,6 +48,7 @@ const Title = styled(Link)`
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: center;
 
   &:hover {
     color: var(--bg-green-500);
@@ -94,9 +97,10 @@ const ButtonWrapper = styled.div`
 `;
 
 export default function ProductBox({_id, title, description, price, images}) {
+  const {addProduct} = useContext(CartContext);
   const url = '/product/' + _id;
   return (
-    <ProductWrapper>
+    <ProductWrapper data-aos="flip-down">
       <WhiteBox href={url}>
         <div>
           <img src={images?.[0]} alt="" />

@@ -4,8 +4,8 @@ import styled from "styled-components";
 import Button from "./Button";
 import ButtonLink from "./ButtonLink";
 import CartIcon from "./icons/CartIcon";
-// import {useContext} from "react";
-// import {CartContext} from "@/components/CartContext";
+import {useContext} from "react";
+import { CartContext } from "./CardContext";
 
 const Bg = styled.div`
   background-color: var(--bg-green-900);
@@ -64,26 +64,26 @@ const ButtonsWrapper = styled.div`
 
 export default function Featured({ product }) {
 
-  //   const {addProduct} = useContext(CartContext);
-  //   function addFeaturedToCart() {
-  //     addProduct(product._id);
-  //   }
+  const {addProduct} = useContext(CartContext);
+  function addFeaturedToCart() {
+    addProduct(product._id);
+  }
 
   return (
     <Bg>
       <Center>
         <ColumnsWrapper>
-          <Column>
+          <Column data-aos="fade-right">
             <div>
-              <Title>{product.title}</Title>
+              <Title data-aos="flip-down" >{product.title}</Title>
               <Desc>{product.description}</Desc>
               <ButtonsWrapper>
                 <ButtonLink href={'/product/'+product._id} outline={1} white={1}>Read More</ButtonLink>
-                <Button white><CartIcon />Add to cart</Button>
+                <Button white onClick={addFeaturedToCart}><CartIcon />Add to cart</Button>
               </ButtonsWrapper>
             </div>
           </Column>
-          <Column>
+          <Column data-aos="fade-right">
             <img src="https://firebasestorage.googleapis.com/v0/b/weblog-s.appspot.com/o/EcoCart-images%2FAboutBanner.PNG?alt=media&token=d4cdd1ff-dfbf-40b6-8648-17a9c0b803e1" alt="" />
           </Column>
         </ColumnsWrapper>

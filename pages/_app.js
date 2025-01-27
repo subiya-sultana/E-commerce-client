@@ -1,5 +1,11 @@
+import "aos/dist/aos.css";
+import AOS from 'aos';
 import Head from "next/head";
 import styled, { createGlobalStyle } from "styled-components";
+import { useEffect } from "react";
+import { CartContextProvider } from "@/components/CardContext";
+
+
 
 const GlobalStyles = createGlobalStyle`
 
@@ -28,6 +34,11 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 export default function App({ Component, pageProps }) {
+
+  useEffect(() => {
+    AOS.init({ duration: 600 }); // 600ms animation
+  }, []);
+
   return (
     <>
       <Head>
@@ -35,7 +46,9 @@ export default function App({ Component, pageProps }) {
         <title>EcoCart - HomePage</title>
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <CartContextProvider>
+        <Component {...pageProps} />
+      </CartContextProvider>
     </>
   )
 }
