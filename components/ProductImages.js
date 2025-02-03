@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import styled from "styled-components";
 import { useState } from "react";
-import ReactImageMagnify from 'react-image-magnify';
 
 const ImageButtons = styled.div`
   display: flex;
@@ -21,7 +20,7 @@ const ImageButton = styled.div`
   padding: 2px;
   cursor: pointer;
   border-radius: 5px;
-  overflow: hidden; /* Ensure no overflow */
+  overflow: hidden;
 `;
 
 const BigImageWrapper = styled.div`
@@ -45,30 +44,14 @@ export default function ProductImages({ images }) {
     <>
       {
         (images.length === 0) ? (
-          <NoImagesMessage>No images availabe to preview this product :(</NoImagesMessage>
+          <NoImagesMessage>No images available to preview this product :(</NoImagesMessage>
         ) : (
           <>
             <BigImageWrapper>
-              <ReactImageMagnify
-                {...{
-                  smallImage: {
-                    alt: 'Product',
-                    isFluidWidth: true,
-                    src: activeImage,
-                  },
-                  largeImage: {
-                    src: activeImage,
-                    width: 900, // Adjust width as needed
-                    height: 400, // Adjust height as needed
-                  },
-                  enlargedImageContainerStyle: {
-                    zIndex: 9,
-                    position: 'absolute',
-                    top: '0',
-                    left: '0',
-                  },
-                  imageClassName: "magnify-image", // Optional: Add a class for custom styling
-                }}
+              <img
+                src={activeImage}
+                alt="Product"
+                style={{ width: '100%', borderRadius: '10px' }} // Ensure full-width image
               />
             </BigImageWrapper>
             <ImageButtons>

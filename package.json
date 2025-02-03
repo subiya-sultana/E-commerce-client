@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm install --legacy-peer-deps && next build", 
+    "build": "npm install --legacy-peer-deps && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -16,7 +16,7 @@
     "paypal-rest-sdk": "^1.8.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-image-magnify": "^2.7.4",
+    "react-medium-image-zoom": "^5.2.13",
     "styled-components": "^6.1.14"
   },
   "devDependencies": {
