@@ -1,4 +1,5 @@
 import mongoose, {model, Schema, models} from "mongoose";
+import Category from './Category';
 
 const ProductSchema = new Schema({
   title: {type:String, required:true},

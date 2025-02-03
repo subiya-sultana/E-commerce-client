@@ -2,7 +2,7 @@ import styled, {css} from "styled-components";
 
 export const ButtonStyle = css`
   border:0;
-  padding: 5px 15px;
+  padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
   display: inline-flex;
@@ -10,6 +10,10 @@ export const ButtonStyle = css`
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  
+  &:hover{
+    opacity: 0.9;
+  }
 
 
   svg{
