@@ -10,8 +10,10 @@ import Input from "@/components/Input";
 import { CartContext } from "@/components/CardContext";
 import axios from "axios";
 import Title from "@/components/Title";
+import Footer from "@/components/Footer";
 
 const ColumnsWrapper = styled.div`
+  min-height: 70vh;
   display: grid;
   grid-template-columns: 1fr;
   @media screen and (min-width: 768px) {
@@ -146,7 +148,7 @@ export default function CartPage() {
           <Box>
             <Title>Cart</Title>
             {!cartProducts?.length && (
-              <div>Your cart is empty</div>
+              <div>Your cart is empty... Add few products and come again :)</div>
             )}
             {products?.length > 0 && (
               <Table>
@@ -232,6 +234,7 @@ export default function CartPage() {
           )}
         </ColumnsWrapper>
       </Center>
+      <Footer />
     </>
   );
 }

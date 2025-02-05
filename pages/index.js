@@ -4,6 +4,7 @@ import NewProducts from "@/components/NewProducts";
 import { mongooseConnect } from "@/lib/mongoose";
 import { Product } from "@/models/Product";
 import CategoriesPage from "./categories";
+import Footer from "@/components/Footer";
 
 
 export default function HomePage({featuredProduct, newProducts, bestProducts}){
@@ -16,16 +17,8 @@ export default function HomePage({featuredProduct, newProducts, bestProducts}){
       <br></br>
       <br></br>
       <NewProducts title="Best selling" products={bestProducts} />
-      {/* <CategoriesPage /> */}
-
-      <div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-      </div>
       
+      <Footer />
     </div>
     
   )

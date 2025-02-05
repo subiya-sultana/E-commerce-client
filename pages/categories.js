@@ -8,6 +8,7 @@ import Title from "@/components/Title";
 import Link from "next/link";
 import mongoose from "mongoose";
 import styled from "styled-components";
+import Footer from "@/components/Footer";
 
 const CategoryButton = styled.button`
   padding: 14px 24px;
@@ -67,6 +68,7 @@ export default function CategoriesPage({ categories, products, selectedCategory 
         {/* Products Grid */}
         <ProductsGrid products={products} />
       </Center>
+      <Footer />
     </>
   );
 }
