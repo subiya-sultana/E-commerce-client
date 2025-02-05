@@ -13,3 +13,12 @@ NOW:
 2. USE 3D COMPONENTS
 3. ADD COMMENTS
 4. CODE FORMATT
+
+
+
+
+# env content:
+# MONGODB_URI="mongodb+srv://ecommerce-admin:ecommerce-admin@cluster0.xblru.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+# PAYPAL_CLIENT_ID=AZbNxeGVSfKYEb8WVcVQCLZohEMOuvx6cC5ddkPcqA7LF4x8JMVn8C2JLCti2DItSkraWVlw_q4H4t8p
+# PAYPAL_CLIENT_SECRET=EP_idQuu411A_zLh2-L8TOk_WtOyXGJDaL6xKW32sTmdOZhr96gFeAomT9j64qxTyucT2Fc_35EB5u-Z
+# PUBLIC_URL=http://localhost:3000

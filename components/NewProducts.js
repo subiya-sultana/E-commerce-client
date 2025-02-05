@@ -9,10 +9,10 @@ const Title = styled.h2`
   color: var(--bg-green-900);
 `;
 
-export default function NewProducts({products}) {
+export default function NewProducts({title, products}) {
   return (
     <Center>
-      <Title data-aos="fade-right">New Arrivals</Title>
+      <Title data-aos="fade-right">{title}</Title>
       <ProductsGrid products={products} />
     </Center>
   );

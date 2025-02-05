@@ -11,6 +11,7 @@ const Bg = styled.div`
   background-color: var(--bg-green-900);
   color:#fff;
   padding: 50px 0;
+  margin: auto;
 `;
 
 const Title = styled.h1`
@@ -29,8 +30,10 @@ const Desc = styled.p`
 
 const ColumnsWrapper = styled.div`
   display: grid;
+  justify-content: center;
+  
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 20px;
   img{
     max-width: 100%;
     max-height: 200px;
@@ -84,7 +87,7 @@ export default function Featured({ product }) {
             </div>
           </Column>
           <Column data-aos="fade-right">
-            <img src="https://firebasestorage.googleapis.com/v0/b/weblog-s.appspot.com/o/EcoCart-images%2FAboutBanner.PNG?alt=media&token=d4cdd1ff-dfbf-40b6-8648-17a9c0b803e1" alt="" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/weblog-s.appspot.com/o/EcoCart-images%2F1738752456271-WhatsApp%20Image%202025-02-05%20at%204.18.52%20PM.jpeg?alt=media&token=3ab153bd-6064-472e-9a11-7fab17c993b3" alt="" />
           </Column>
         </ColumnsWrapper>
       </Center>
